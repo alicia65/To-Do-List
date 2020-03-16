@@ -30,16 +30,30 @@ namespace To_Do_List
             if (!String.IsNullOrWhiteSpace(newItem))
             {
                 //Use Contains to check if item is already in Items collection
-                //if (clsToDo.Items.Contains(newItem))
-                if(itemIsInList(clsToDo.Items, newItem))
+                if (clsToDo.Items.Contains(newItem))
+                
                 {
-                    MessageBox.Show("Duplicate item", "Warning");
+                    MessageBox.Show("You already added that item", "Error");
                 }
                 else
                 {
                     //Use Add to add new item to end of Items collection
-                    clsToDo.Items.Add(newItem);
+                    DateTime todoCreated = DateTime.Now;
+                    bool urgent = chkUrgent.Checked;
+
+                    //Format the text, date/time created and urgent into one string
+                    string todoText = $"{newItem} - created at {todoCreated:f}";
+                    if (urgent) 
+                    {
+                        todoText +=    "URGENT!";
+                    }
+                    
+                    // add to the ListBox items
+                    clsToDo.Items.Add(todoText);
+                    
+                    //Clear inputs
                     txtNewToDo.Text = "";
+                    chkUrgent.Checked = false;
                 }
             }   
             //No else, just ignore empty input.
@@ -75,6 +89,11 @@ namespace To_Do_List
                 clsToDo.Items.Remove(item); // Remove by value
                 lstDone.Items.Add(item);
             }
+        }
+
+        private void ChkUrgent_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
