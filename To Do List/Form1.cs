@@ -35,7 +35,7 @@ namespace To_Do_List
                 if (!ToDoItemInList(toDoItem))
                 {
                     clsToDo.Items.Add(toDoItem);
-                    txtNewToDo.Text = ""; //Clear text
+                    txtNewToDo.Text =   " "; //Clear text
                 }
                 else
                 {

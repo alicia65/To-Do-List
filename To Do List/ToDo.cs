@@ -28,7 +28,7 @@ namespace To_Do_List
 
         public override string ToString()
         {
-            string displayText = $"{Text}  - Created on {DateCreated:f}";
+            string displayText = $"{Text}  - Created on {DateCreated:f}   ";
             if (Urgent) 
             {
                 displayText +=  "URGENT!";
