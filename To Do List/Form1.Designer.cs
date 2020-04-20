@@ -30,13 +30,13 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtNewToDo = new System.Windows.Forms.TextBox();
             this.btnAddToDo = new System.Windows.Forms.Button();
             this.clsToDo = new System.Windows.Forms.CheckedListBox();
             this.btnDelete = new System.Windows.Forms.Button();
             this.lstDone = new System.Windows.Forms.ListBox();
             this.lblDeletedItems = new System.Windows.Forms.Label();
             this.chkUrgent = new System.Windows.Forms.CheckBox();
+            this.cboToDoItem = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -56,13 +56,6 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Things to do";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtNewToDo
-            // 
-            this.txtNewToDo.Location = new System.Drawing.Point(28, 51);
-            this.txtNewToDo.Name = "txtNewToDo";
-            this.txtNewToDo.Size = new System.Drawing.Size(510, 22);
-            this.txtNewToDo.TabIndex = 2;
             // 
             // btnAddToDo
             // 
@@ -120,26 +113,34 @@
             this.chkUrgent.UseVisualStyleBackColor = true;
             this.chkUrgent.CheckedChanged += new System.EventHandler(this.ChkUrgent_CheckedChanged);
             // 
+            // cboToDoItem
+            // 
+            this.cboToDoItem.FormattingEnabled = true;
+            this.cboToDoItem.Location = new System.Drawing.Point(28, 51);
+            this.cboToDoItem.Name = "cboToDoItem";
+            this.cboToDoItem.Size = new System.Drawing.Size(501, 24);
+            this.cboToDoItem.TabIndex = 10;
+            this.cboToDoItem.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AcceptButton = this.btnAddToDo;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cboToDoItem);
             this.Controls.Add(this.chkUrgent);
             this.Controls.Add(this.lblDeletedItems);
             this.Controls.Add(this.lstDone);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.clsToDo);
             this.Controls.Add(this.btnAddToDo);
-            this.Controls.Add(this.txtNewToDo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "To Do List";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -147,13 +148,13 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtNewToDo;
         private System.Windows.Forms.Button btnAddToDo;
         private System.Windows.Forms.CheckedListBox clsToDo;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.ListBox lstDone;
         private System.Windows.Forms.Label lblDeletedItems;
         private System.Windows.Forms.CheckBox chkUrgent;
+        private System.Windows.Forms.ComboBox cboToDoItem;
     }
 }
 

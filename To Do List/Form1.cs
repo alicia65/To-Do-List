@@ -24,18 +24,20 @@ namespace To_Do_List
 
         private void btnAddToDo_Click(object sender, EventArgs e)
         {
-            string todoText = txtNewToDo.Text;
+            string todoText = cboToDoItem.Text;
             bool urgent = chkUrgent.Checked;
+            DateTime datecreated = chkdatecreated.Checked;
+            Category category = cboToDoItem.Text;
 
             if (!String.IsNullOrWhiteSpace(todoText))
             {
                 //Create new ToDo object using a constructor
-                ToDo toDoItem = new ToDo(todoText, urgent);
+                ToDo toDoItem = new ToDo(todoText, urgent, datecreated, category);
 
                 if (!ToDoItemInList(toDoItem))
                 {
                     clsToDo.Items.Add(toDoItem);
-                    txtNewToDo.Text =   " "; //Clear text
+                   cboToDoItem.Text =   " "; //Clear text
                 }
                 else
                 {
@@ -82,6 +84,13 @@ namespace To_Do_List
         private void ChkUrgent_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cboToDoItem.Text = "Work";
+            cboToDoItem.Text = "School";
+            cboToDoItem.Text = "Personal";
         }
     }
 }
