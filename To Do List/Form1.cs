@@ -10,8 +10,10 @@ using System.Windows.Forms;
 
 namespace To_Do_List
 {
+   
     public partial class Form1 : Form
     {
+        public object chkdateCreated;
         public Form1()
         {
             InitializeComponent();
@@ -19,31 +21,35 @@ namespace To_Do_List
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            ComboBox comboBox = new ComboBox();// Create comboBox ojbect
+            comboBox.Items.Add("Work");
+            comboBox.Items.Add("School");
+            comboBox.Items.Add("Personal");
 
         }
 
         private void btnAddToDo_Click(object sender, EventArgs e)
         {
-            string todoText = cboToDoItem.Text;
+            string todoText = txtToDoItem.Text;
             bool urgent = chkUrgent.Checked;
-            DateTime datecreated = chkdatecreated.Checked;
-            Category category = cboToDoItem.Text;
-
+            string category = txtToDoItem.Text;
+            DateTime dateCreated = chkdateCreated.Checked;
+            string comboBox = lblToDo.Text;
+                        
             if (!String.IsNullOrWhiteSpace(todoText))
             {
                 //Create new ToDo object using a constructor
-                ToDo toDoItem = new ToDo(todoText, urgent, datecreated, category);
+                ToDo toDoItem = new ToDo(todoText, urgent, category, dateCreated, comboBox );
 
                 if (!ToDoItemInList(toDoItem))
                 {
                     clsToDo.Items.Add(toDoItem);
-                   cboToDoItem.Text =   " "; //Clear text
+                   txtToDoItem.Text =   " "; //Clear text
                 }
                 else
                 {
                     MessageBox.Show("You already added that", "Duplicate");
                 }
-
             }
         }
 
@@ -84,13 +90,6 @@ namespace To_Do_List
         private void ChkUrgent_CheckedChanged(object sender, EventArgs e)
         {
 
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            cboToDoItem.Text = "Work";
-            cboToDoItem.Text = "School";
-            cboToDoItem.Text = "Personal";
         }
     }
 }

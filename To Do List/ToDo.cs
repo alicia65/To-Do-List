@@ -10,12 +10,13 @@ namespace To_Do_List
     class ToDo
     {
 
-        public ToDo(string text, bool urgent, DateTime datecreated, string category) 
+        public ToDo(string text, bool urgent, string category, DateTime dateCreated, string comboBox) 
         {
             Text = text; // set the Text property
             Urgent = urgent; // set the Urgent property
             Category = category;// set the Category property
-            DateCreated = datecreated; // set the DateCreated property
+            DateCreated = dateCreated; // set the DateCreated property
+            ComboBox = comboBox; // set the Combox property
         }
         // A Property, backed by the text field 
         public string Text { get; set; }
@@ -29,6 +30,8 @@ namespace To_Do_List
         //Auto property with an initial value
         public DateTime DateCreated { get; set; } = DateTime.Now;
 
+        public string ComboBox { get; set; } 
+
         //A method that can be called for any ToDo object
 
         public override string ToString()
@@ -36,7 +39,7 @@ namespace To_Do_List
             string displayText = $"{Text} {Category} - Created on {DateCreated:f}   ";
             if (Urgent) 
             {
-                displayText +=  "URGENT!" + "Work" + "School" + "Personal";
+                displayText +=  "URGENT!" ;
             }
             
             return displayText;

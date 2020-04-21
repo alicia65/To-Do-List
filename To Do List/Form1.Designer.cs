@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblToDo = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAddToDo = new System.Windows.Forms.Button();
             this.clsToDo = new System.Windows.Forms.CheckedListBox();
@@ -37,16 +37,17 @@
             this.lblDeletedItems = new System.Windows.Forms.Label();
             this.chkUrgent = new System.Windows.Forms.CheckBox();
             this.cboToDoItem = new System.Windows.Forms.ComboBox();
+            this.txtToDoItem = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // label1
+            // lblToDo
             // 
-            this.label1.Location = new System.Drawing.Point(-1, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(216, 23);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "What do you need to do?";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblToDo.Location = new System.Drawing.Point(-1, 25);
+            this.lblToDo.Name = "lblToDo";
+            this.lblToDo.Size = new System.Drawing.Size(216, 23);
+            this.lblToDo.TabIndex = 0;
+            this.lblToDo.Text = "What do you need to do?";
+            this.lblToDo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -116,11 +117,17 @@
             // cboToDoItem
             // 
             this.cboToDoItem.FormattingEnabled = true;
-            this.cboToDoItem.Location = new System.Drawing.Point(28, 51);
+            this.cboToDoItem.Location = new System.Drawing.Point(360, 55);
             this.cboToDoItem.Name = "cboToDoItem";
-            this.cboToDoItem.Size = new System.Drawing.Size(501, 24);
+            this.cboToDoItem.Size = new System.Drawing.Size(169, 24);
             this.cboToDoItem.TabIndex = 10;
-            this.cboToDoItem.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // txtToDoItem
+            // 
+            this.txtToDoItem.Location = new System.Drawing.Point(28, 55);
+            this.txtToDoItem.Name = "txtToDoItem";
+            this.txtToDoItem.Size = new System.Drawing.Size(307, 22);
+            this.txtToDoItem.TabIndex = 11;
             // 
             // Form1
             // 
@@ -128,6 +135,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtToDoItem);
             this.Controls.Add(this.cboToDoItem);
             this.Controls.Add(this.chkUrgent);
             this.Controls.Add(this.lblDeletedItems);
@@ -136,17 +144,18 @@
             this.Controls.Add(this.clsToDo);
             this.Controls.Add(this.btnAddToDo);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblToDo);
             this.Name = "Form1";
             this.Text = "To Do List";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblToDo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAddToDo;
         private System.Windows.Forms.CheckedListBox clsToDo;
@@ -155,6 +164,7 @@
         private System.Windows.Forms.Label lblDeletedItems;
         private System.Windows.Forms.CheckBox chkUrgent;
         private System.Windows.Forms.ComboBox cboToDoItem;
+        private System.Windows.Forms.TextBox txtToDoItem;
     }
 }
 
