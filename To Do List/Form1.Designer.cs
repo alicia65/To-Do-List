@@ -38,7 +38,7 @@
             this.chkUrgent = new System.Windows.Forms.CheckBox();
             this.cboToDoCategory = new System.Windows.Forms.ComboBox();
             this.txtToDoItem = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblCategory = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblToDo
@@ -130,13 +130,13 @@
             this.txtToDoItem.Size = new System.Drawing.Size(187, 22);
             this.txtToDoItem.TabIndex = 11;
             // 
-            // label1
+            // lblCategory
             // 
-            this.label1.Location = new System.Drawing.Point(318, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Category";
+            this.lblCategory.Location = new System.Drawing.Point(318, 25);
+            this.lblCategory.Name = "lblCategory";
+            this.lblCategory.Size = new System.Drawing.Size(100, 23);
+            this.lblCategory.TabIndex = 12;
+            this.lblCategory.Text = "Category";
             // 
             // Form1
             // 
@@ -144,7 +144,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblCategory);
             this.Controls.Add(this.txtToDoItem);
             this.Controls.Add(this.cboToDoCategory);
             this.Controls.Add(this.chkUrgent);
@@ -175,7 +175,7 @@
         private System.Windows.Forms.CheckBox chkUrgent;
         private System.Windows.Forms.ComboBox cboToDoCategory;
         private System.Windows.Forms.TextBox txtToDoItem;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCategory;
     }
 }
 
