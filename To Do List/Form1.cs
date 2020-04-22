@@ -43,7 +43,7 @@ namespace To_Do_List
 
                 if (!ToDoItemInList(toDoItem))
                 {
-                    clsToDo.Items.Add(toDoItem);
+                    clsToDoCategory.Items.Add(toDoItem);
                    txtToDoItem.Text =   " "; //Clear text
                 }
                 else
@@ -55,7 +55,7 @@ namespace To_Do_List
 
         private bool ToDoItemInList(ToDo toDoItem)
         {
-            foreach(ToDo listItem in clsToDo.Items) 
+            foreach(ToDo listItem in clsToDoCategory.Items) 
             {
                 if(toDoItem.Text.ToUpper() == listItem.Text.ToUpper()) 
                 {
@@ -73,7 +73,7 @@ namespace To_Do_List
             List<ToDo> doneItems = new List<ToDo>();
 
             //Copy all checked items to new List
-            foreach (ToDo item in clsToDo.CheckedItems) 
+            foreach (ToDo item in clsToDoCategory.CheckedItems) 
             {
                 doneItems.Add(item);
             }
@@ -82,7 +82,7 @@ namespace To_Do_List
             // Add to lstDone.Items
             foreach(ToDo item in doneItems) 
             {
-                clsToDo.Items.Remove(item); // Remove by value
+                clsToDoCategory.Items.Remove(item); // Remove by value
                 lstDone.Items.Add(item);
             }
         }

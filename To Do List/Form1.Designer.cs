@@ -31,13 +31,14 @@
             this.lblToDo = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAddToDo = new System.Windows.Forms.Button();
-            this.clsToDo = new System.Windows.Forms.CheckedListBox();
+            this.clsToDoCategory = new System.Windows.Forms.CheckedListBox();
             this.btnDelete = new System.Windows.Forms.Button();
             this.lstDone = new System.Windows.Forms.ListBox();
             this.lblDeletedItems = new System.Windows.Forms.Label();
             this.chkUrgent = new System.Windows.Forms.CheckBox();
             this.cboToDoCategory = new System.Windows.Forms.ComboBox();
             this.txtToDoItem = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblToDo
@@ -68,13 +69,13 @@
             this.btnAddToDo.UseVisualStyleBackColor = true;
             this.btnAddToDo.Click += new System.EventHandler(this.btnAddToDo_Click);
             // 
-            // clsToDo
+            // clsToDoCategory
             // 
-            this.clsToDo.FormattingEnabled = true;
-            this.clsToDo.Location = new System.Drawing.Point(28, 124);
-            this.clsToDo.Name = "clsToDo";
-            this.clsToDo.Size = new System.Drawing.Size(731, 174);
-            this.clsToDo.TabIndex = 4;
+            this.clsToDoCategory.FormattingEnabled = true;
+            this.clsToDoCategory.Location = new System.Drawing.Point(28, 124);
+            this.clsToDoCategory.Name = "clsToDoCategory";
+            this.clsToDoCategory.Size = new System.Drawing.Size(731, 174);
+            this.clsToDoCategory.TabIndex = 4;
             // 
             // btnDelete
             // 
@@ -117,17 +118,25 @@
             // cboToDoCategory
             // 
             this.cboToDoCategory.FormattingEnabled = true;
-            this.cboToDoCategory.Location = new System.Drawing.Point(360, 55);
+            this.cboToDoCategory.Location = new System.Drawing.Point(310, 55);
             this.cboToDoCategory.Name = "cboToDoCategory";
-            this.cboToDoCategory.Size = new System.Drawing.Size(169, 24);
+            this.cboToDoCategory.Size = new System.Drawing.Size(208, 24);
             this.cboToDoCategory.TabIndex = 10;
             // 
             // txtToDoItem
             // 
-            this.txtToDoItem.Location = new System.Drawing.Point(28, 55);
+            this.txtToDoItem.Location = new System.Drawing.Point(28, 57);
             this.txtToDoItem.Name = "txtToDoItem";
-            this.txtToDoItem.Size = new System.Drawing.Size(307, 22);
+            this.txtToDoItem.Size = new System.Drawing.Size(187, 22);
             this.txtToDoItem.TabIndex = 11;
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(318, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 23);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Category";
             // 
             // Form1
             // 
@@ -135,13 +144,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtToDoItem);
             this.Controls.Add(this.cboToDoCategory);
             this.Controls.Add(this.chkUrgent);
             this.Controls.Add(this.lblDeletedItems);
             this.Controls.Add(this.lstDone);
             this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.clsToDo);
+            this.Controls.Add(this.clsToDoCategory);
             this.Controls.Add(this.btnAddToDo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblToDo);
@@ -158,13 +168,14 @@
         private System.Windows.Forms.Label lblToDo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAddToDo;
-        private System.Windows.Forms.CheckedListBox clsToDo;
+        private System.Windows.Forms.CheckedListBox clsToDoCategory;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.ListBox lstDone;
         private System.Windows.Forms.Label lblDeletedItems;
         private System.Windows.Forms.CheckBox chkUrgent;
         private System.Windows.Forms.ComboBox cboToDoCategory;
         private System.Windows.Forms.TextBox txtToDoItem;
+        private System.Windows.Forms.Label label1;
     }
 }
 
