@@ -36,7 +36,7 @@
             this.lstDone = new System.Windows.Forms.ListBox();
             this.lblDeletedItems = new System.Windows.Forms.Label();
             this.chkUrgent = new System.Windows.Forms.CheckBox();
-            this.cboToDoItem = new System.Windows.Forms.ComboBox();
+            this.cboToDoCategory = new System.Windows.Forms.ComboBox();
             this.txtToDoItem = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -114,13 +114,13 @@
             this.chkUrgent.UseVisualStyleBackColor = true;
             this.chkUrgent.CheckedChanged += new System.EventHandler(this.ChkUrgent_CheckedChanged);
             // 
-            // cboToDoItem
+            // cboToDoCategory
             // 
-            this.cboToDoItem.FormattingEnabled = true;
-            this.cboToDoItem.Location = new System.Drawing.Point(360, 55);
-            this.cboToDoItem.Name = "cboToDoItem";
-            this.cboToDoItem.Size = new System.Drawing.Size(169, 24);
-            this.cboToDoItem.TabIndex = 10;
+            this.cboToDoCategory.FormattingEnabled = true;
+            this.cboToDoCategory.Location = new System.Drawing.Point(360, 55);
+            this.cboToDoCategory.Name = "cboToDoCategory";
+            this.cboToDoCategory.Size = new System.Drawing.Size(169, 24);
+            this.cboToDoCategory.TabIndex = 10;
             // 
             // txtToDoItem
             // 
@@ -136,7 +136,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtToDoItem);
-            this.Controls.Add(this.cboToDoItem);
+            this.Controls.Add(this.cboToDoCategory);
             this.Controls.Add(this.chkUrgent);
             this.Controls.Add(this.lblDeletedItems);
             this.Controls.Add(this.lstDone);
@@ -163,7 +163,7 @@
         private System.Windows.Forms.ListBox lstDone;
         private System.Windows.Forms.Label lblDeletedItems;
         private System.Windows.Forms.CheckBox chkUrgent;
-        private System.Windows.Forms.ComboBox cboToDoItem;
+        private System.Windows.Forms.ComboBox cboToDoCategory;
         private System.Windows.Forms.TextBox txtToDoItem;
     }
 }

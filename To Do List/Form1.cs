@@ -21,10 +21,10 @@ namespace To_Do_List
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            ComboBox comboBox = new ComboBox();// Create comboBox ojbect
-            comboBox.Items.Add("Work");
-            comboBox.Items.Add("School");
-            comboBox.Items.Add("Personal");
+            
+            cboToDoCategory.Items.Add("Work");
+            cboToDoCategory.Items.Add("School");
+            cboToDoCategory.Items.Add("Personal");
 
         }
 
@@ -32,14 +32,14 @@ namespace To_Do_List
         {
             string todoText = txtToDoItem.Text;
             bool urgent = chkUrgent.Checked;
-            string category = txtToDoItem.Text;
-            DateTime dateCreated = chkdateCreated.Checked;
+            string category = cboToDoCategory.Text;
+            
             string comboBox = lblToDo.Text;
                         
             if (!String.IsNullOrWhiteSpace(todoText))
             {
                 //Create new ToDo object using a constructor
-                ToDo toDoItem = new ToDo(todoText, urgent, category, dateCreated, comboBox );
+                ToDo toDoItem = new ToDo(todoText, urgent, category, comboBox );
 
                 if (!ToDoItemInList(toDoItem))
                 {
