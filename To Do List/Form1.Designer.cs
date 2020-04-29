@@ -39,6 +39,8 @@
             this.cboToDoCategory = new System.Windows.Forms.ComboBox();
             this.txtToDoItem = new System.Windows.Forms.TextBox();
             this.lblCategory = new System.Windows.Forms.Label();
+            this.wbbToDo = new System.Windows.Forms.WebBrowser();
+            this.lblWebBrowserToDo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblToDo
@@ -74,7 +76,7 @@
             this.clsToDoCategory.FormattingEnabled = true;
             this.clsToDoCategory.Location = new System.Drawing.Point(28, 124);
             this.clsToDoCategory.Name = "clsToDoCategory";
-            this.clsToDoCategory.Size = new System.Drawing.Size(731, 174);
+            this.clsToDoCategory.Size = new System.Drawing.Size(311, 174);
             this.clsToDoCategory.TabIndex = 4;
             // 
             // btnDelete
@@ -138,12 +140,30 @@
             this.lblCategory.TabIndex = 12;
             this.lblCategory.Text = "Category";
             // 
+            // wbbToDo
+            // 
+            this.wbbToDo.Location = new System.Drawing.Point(374, 124);
+            this.wbbToDo.MinimumSize = new System.Drawing.Size(20, 20);
+            this.wbbToDo.Name = "wbbToDo";
+            this.wbbToDo.Size = new System.Drawing.Size(331, 174);
+            this.wbbToDo.TabIndex = 13;
+            // 
+            // lblWebBrowserToDo
+            // 
+            this.lblWebBrowserToDo.Location = new System.Drawing.Point(374, 105);
+            this.lblWebBrowserToDo.Name = "lblWebBrowserToDo";
+            this.lblWebBrowserToDo.Size = new System.Drawing.Size(240, 23);
+            this.lblWebBrowserToDo.TabIndex = 14;
+            this.lblWebBrowserToDo.Text = "Searching internet for  things to do ";
+            // 
             // Form1
             // 
             this.AcceptButton = this.btnAddToDo;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblWebBrowserToDo);
+            this.Controls.Add(this.wbbToDo);
             this.Controls.Add(this.lblCategory);
             this.Controls.Add(this.txtToDoItem);
             this.Controls.Add(this.cboToDoCategory);
@@ -176,6 +196,8 @@
         private System.Windows.Forms.ComboBox cboToDoCategory;
         private System.Windows.Forms.TextBox txtToDoItem;
         private System.Windows.Forms.Label lblCategory;
+        private System.Windows.Forms.WebBrowser wbbToDo;
+        private System.Windows.Forms.Label lblWebBrowserToDo;
     }
 }
 

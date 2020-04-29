@@ -9,13 +9,11 @@ namespace To_Do_List
 {
     class ToDo
     {
-
         public ToDo(string text, bool urgent, string category, string comboBox) 
         {
             Text = text; // set the Text property
             Urgent = urgent; // set the Urgent property
             Category = category;// set the Category property
-            
             ComboBox = comboBox; // set the Combox property
         }
         // A Property, backed by the text field 
