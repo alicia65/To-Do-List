@@ -1,6 +1,6 @@
 ﻿namespace To_Do_List
 {
-    partial class Form2
+    partial class WebBrowser
     {
         /// <summary>
         /// Required designer variable.
@@ -35,8 +35,9 @@
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.btnGo = new System.Windows.Forms.Button();
-            this.txtUrlAddress = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblStatus
@@ -49,10 +50,10 @@
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(0, 0);
+            this.webBrowser1.Location = new System.Drawing.Point(0, 37);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(795, 461);
+            this.webBrowser1.Size = new System.Drawing.Size(795, 409);
             this.webBrowser1.TabIndex = 7;
             // 
             // btnBack
@@ -73,6 +74,7 @@
             this.btnForward.TabIndex = 9;
             this.btnForward.Text = "Forward";
             this.btnForward.UseVisualStyleBackColor = true;
+            this.btnForward.Click += new System.EventHandler(this.btnForward_Click);
             // 
             // btnRefresh
             // 
@@ -82,6 +84,7 @@
             this.btnRefresh.TabIndex = 10;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnHome
             // 
@@ -91,22 +94,24 @@
             this.btnHome.TabIndex = 11;
             this.btnHome.Text = "Home";
             this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // btnGo
             // 
             this.btnGo.Location = new System.Drawing.Point(683, 7);
             this.btnGo.Name = "btnGo";
-            this.btnGo.Size = new System.Drawing.Size(75, 23);
+            this.btnGo.Size = new System.Drawing.Size(43, 23);
             this.btnGo.TabIndex = 12;
             this.btnGo.Text = "GO";
             this.btnGo.UseVisualStyleBackColor = true;
+            this.btnGo.Click += new System.EventHandler(this.btnGo_Click);
             // 
-            // txtUrlAddress
+            // txtAddress
             // 
-            this.txtUrlAddress.Location = new System.Drawing.Point(426, 8);
-            this.txtUrlAddress.Name = "txtUrlAddress";
-            this.txtUrlAddress.Size = new System.Drawing.Size(237, 22);
-            this.txtUrlAddress.TabIndex = 13;
+            this.txtAddress.Location = new System.Drawing.Point(426, 8);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(237, 22);
+            this.txtAddress.TabIndex = 13;
             // 
             // label1
             // 
@@ -116,13 +121,22 @@
             this.label1.Size = new System.Drawing.Size(0, 17);
             this.label1.TabIndex = 14;
             // 
-            // Form2
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(5, 453);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 17);
+            this.label2.TabIndex = 15;
+            // 
+            // WebBrowser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(828, 479);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtUrlAddress);
+            this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.btnGo);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnRefresh);
@@ -130,7 +144,9 @@
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.lblStatus);
-            this.Name = "Form2";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Name = "WebBrowser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "To Do Web Browser";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -145,7 +161,8 @@
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Button btnGo;
-        private System.Windows.Forms.TextBox txtUrlAddress;
+        private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

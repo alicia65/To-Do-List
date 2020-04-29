@@ -39,8 +39,7 @@
             this.cboToDoCategory = new System.Windows.Forms.ComboBox();
             this.txtToDoItem = new System.Windows.Forms.TextBox();
             this.lblCategory = new System.Windows.Forms.Label();
-            this.wbbToDo = new System.Windows.Forms.WebBrowser();
-            this.lblWebBrowserToDo = new System.Windows.Forms.Label();
+            this.btnSearchInternet = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblToDo
@@ -63,9 +62,9 @@
             // 
             // btnAddToDo
             // 
-            this.btnAddToDo.Location = new System.Drawing.Point(674, 51);
+            this.btnAddToDo.Location = new System.Drawing.Point(555, 58);
             this.btnAddToDo.Name = "btnAddToDo";
-            this.btnAddToDo.Size = new System.Drawing.Size(75, 23);
+            this.btnAddToDo.Size = new System.Drawing.Size(66, 23);
             this.btnAddToDo.TabIndex = 3;
             this.btnAddToDo.Text = "Add";
             this.btnAddToDo.UseVisualStyleBackColor = true;
@@ -76,7 +75,7 @@
             this.clsToDoCategory.FormattingEnabled = true;
             this.clsToDoCategory.Location = new System.Drawing.Point(28, 124);
             this.clsToDoCategory.Name = "clsToDoCategory";
-            this.clsToDoCategory.Size = new System.Drawing.Size(311, 174);
+            this.clsToDoCategory.Size = new System.Drawing.Size(731, 174);
             this.clsToDoCategory.TabIndex = 4;
             // 
             // btnDelete
@@ -109,9 +108,9 @@
             // 
             // chkUrgent
             // 
-            this.chkUrgent.Location = new System.Drawing.Point(560, 53);
+            this.chkUrgent.Location = new System.Drawing.Point(468, 57);
             this.chkUrgent.Name = "chkUrgent";
-            this.chkUrgent.Size = new System.Drawing.Size(104, 24);
+            this.chkUrgent.Size = new System.Drawing.Size(81, 24);
             this.chkUrgent.TabIndex = 9;
             this.chkUrgent.Text = "Urgent";
             this.chkUrgent.UseVisualStyleBackColor = true;
@@ -120,7 +119,7 @@
             // cboToDoCategory
             // 
             this.cboToDoCategory.FormattingEnabled = true;
-            this.cboToDoCategory.Location = new System.Drawing.Point(310, 55);
+            this.cboToDoCategory.Location = new System.Drawing.Point(242, 57);
             this.cboToDoCategory.Name = "cboToDoCategory";
             this.cboToDoCategory.Size = new System.Drawing.Size(208, 24);
             this.cboToDoCategory.TabIndex = 10;
@@ -140,21 +139,15 @@
             this.lblCategory.TabIndex = 12;
             this.lblCategory.Text = "Category";
             // 
-            // wbbToDo
+            // btnSearchInternet
             // 
-            this.wbbToDo.Location = new System.Drawing.Point(374, 124);
-            this.wbbToDo.MinimumSize = new System.Drawing.Size(20, 20);
-            this.wbbToDo.Name = "wbbToDo";
-            this.wbbToDo.Size = new System.Drawing.Size(331, 174);
-            this.wbbToDo.TabIndex = 13;
-            // 
-            // lblWebBrowserToDo
-            // 
-            this.lblWebBrowserToDo.Location = new System.Drawing.Point(374, 105);
-            this.lblWebBrowserToDo.Name = "lblWebBrowserToDo";
-            this.lblWebBrowserToDo.Size = new System.Drawing.Size(240, 23);
-            this.lblWebBrowserToDo.TabIndex = 14;
-            this.lblWebBrowserToDo.Text = "Searching internet for  things to do ";
+            this.btnSearchInternet.Location = new System.Drawing.Point(647, 58);
+            this.btnSearchInternet.Name = "btnSearchInternet";
+            this.btnSearchInternet.Size = new System.Drawing.Size(141, 23);
+            this.btnSearchInternet.TabIndex = 15;
+            this.btnSearchInternet.Text = "Search Internet";
+            this.btnSearchInternet.UseVisualStyleBackColor = true;
+            this.btnSearchInternet.Click += new System.EventHandler(this.btnSearchInternet_Click);
             // 
             // Form1
             // 
@@ -162,8 +155,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblWebBrowserToDo);
-            this.Controls.Add(this.wbbToDo);
+            this.Controls.Add(this.btnSearchInternet);
             this.Controls.Add(this.lblCategory);
             this.Controls.Add(this.txtToDoItem);
             this.Controls.Add(this.cboToDoCategory);
@@ -196,8 +188,7 @@
         private System.Windows.Forms.ComboBox cboToDoCategory;
         private System.Windows.Forms.TextBox txtToDoItem;
         private System.Windows.Forms.Label lblCategory;
-        private System.Windows.Forms.WebBrowser wbbToDo;
-        private System.Windows.Forms.Label lblWebBrowserToDo;
+        private System.Windows.Forms.Button btnSearchInternet;
     }
 }
 
