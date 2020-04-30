@@ -39,7 +39,7 @@
             this.cboToDoCategory = new System.Windows.Forms.ComboBox();
             this.txtToDoItem = new System.Windows.Forms.TextBox();
             this.lblCategory = new System.Windows.Forms.Label();
-            this.btnSearchInternet = new System.Windows.Forms.Button();
+            this.btnOpenInternet = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblToDo
@@ -139,15 +139,15 @@
             this.lblCategory.TabIndex = 12;
             this.lblCategory.Text = "Category";
             // 
-            // btnSearchInternet
+            // btnOpenInternet
             // 
-            this.btnSearchInternet.Location = new System.Drawing.Point(647, 58);
-            this.btnSearchInternet.Name = "btnSearchInternet";
-            this.btnSearchInternet.Size = new System.Drawing.Size(141, 23);
-            this.btnSearchInternet.TabIndex = 15;
-            this.btnSearchInternet.Text = "Search Internet";
-            this.btnSearchInternet.UseVisualStyleBackColor = true;
-            this.btnSearchInternet.Click += new System.EventHandler(this.btnSearchInternet_Click);
+            this.btnOpenInternet.Location = new System.Drawing.Point(647, 58);
+            this.btnOpenInternet.Name = "btnOpenInternet";
+            this.btnOpenInternet.Size = new System.Drawing.Size(141, 33);
+            this.btnOpenInternet.TabIndex = 15;
+            this.btnOpenInternet.Text = "Open Internet";
+            this.btnOpenInternet.UseVisualStyleBackColor = true;
+            this.btnOpenInternet.Click += new System.EventHandler(this.btnSearchInternet_Click);
             // 
             // Form1
             // 
@@ -155,7 +155,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnSearchInternet);
+            this.Controls.Add(this.btnOpenInternet);
             this.Controls.Add(this.lblCategory);
             this.Controls.Add(this.txtToDoItem);
             this.Controls.Add(this.cboToDoCategory);
@@ -188,7 +188,7 @@
         private System.Windows.Forms.ComboBox cboToDoCategory;
         private System.Windows.Forms.TextBox txtToDoItem;
         private System.Windows.Forms.Label lblCategory;
-        private System.Windows.Forms.Button btnSearchInternet;
+        private System.Windows.Forms.Button btnOpenInternet;
     }
 }
 

@@ -148,6 +148,7 @@
             this.Name = "WebBrowser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "To Do Web Browser";
+            this.Load += new System.EventHandler(this.WebBrowser_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

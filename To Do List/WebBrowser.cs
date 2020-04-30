@@ -17,6 +17,12 @@ namespace To_Do_List
             InitializeComponent();
         }
 
+        private void WebBrowser_Load(object sender, EventArgs e)
+        { 
+            // When the form loads, open this web page.
+                webBrowser1.Navigate("http://www.google.com/");
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             // Call back button to go back
@@ -54,8 +60,13 @@ namespace To_Do_List
             webBrowser1.Navigate(txtAddress.Text);
         }
 
-        
-    }
+         internal static void Navigate()
+            
+        {
+             throw new NotImplementedException();
+        }
+
+     }
 
  }
         
