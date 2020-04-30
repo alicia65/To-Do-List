@@ -18,9 +18,14 @@ namespace To_Do_List
         }
 
         private void WebBrowser_Load(object sender, EventArgs e)
-        { 
+        {
             // When the form loads, open this web page.
-                webBrowser1.Navigate("http://www.google.com/");
+            WebBrowser webBrowser = new WebBrowser();
+            DialogResult goButton = webBrowser.ShowDialog();
+            if (goButton == DialogResult.OK)
+                txtAddress.Text = webBrowser.Tag.ToString();
+
+             webBrowser.Navigate("http://www.google.com/");
         }
 
         private void button1_Click(object sender, EventArgs e)

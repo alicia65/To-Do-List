@@ -11,10 +11,10 @@ using System.Windows.Forms;
 namespace To_Do_List
 {
    
-    public partial class Form1 : Form
+    public partial class frmToDo : Form
     {
         public object chkdateCreated;
-        public Form1()
+        public frmToDo()
         {
             InitializeComponent();
         }
@@ -94,15 +94,21 @@ namespace To_Do_List
 
         private void btnSearchInternet_Click(object sender, EventArgs e)
         {
-            try 
+            try
             {
-                WebBrowser.Navigate(txtToDoItem.Text);
-                           
+                //open the web browser form WebBrowser.cs
+                WebBrowser browser = new WebBrowser();
+                DialogResult searchInternetButton = browser.ShowDialog();
+                if (searchInternetButton == DialogResult.OK)
+                    lblToDo.Text = browser.Tag.ToString();
             }
-            catch (FormatException) 
+             catch (FormatException)
             {
                 MessageBox.Show("Enter text only", "Error");
             }
+
+
+
         }        
     }
 }
