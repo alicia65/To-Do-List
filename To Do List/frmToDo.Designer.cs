@@ -143,13 +143,13 @@
             // 
             this.btnSearchInternet.Location = new System.Drawing.Point(647, 58);
             this.btnSearchInternet.Name = "btnSearchInternet";
-            this.btnSearchInternet.Size = new System.Drawing.Size(141, 33);
+            this.btnSearchInternet.Size = new System.Drawing.Size(141, 23);
             this.btnSearchInternet.TabIndex = 15;
             this.btnSearchInternet.Text = "Search Internet";
             this.btnSearchInternet.UseVisualStyleBackColor = true;
             this.btnSearchInternet.Click += new System.EventHandler(this.btnSearchInternet_Click);
             // 
-            // Form1
+            // frmToDo
             // 
             this.AcceptButton = this.btnAddToDo;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -167,7 +167,7 @@
             this.Controls.Add(this.btnAddToDo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblToDo);
-            this.Name = "Form1";
+            this.Name = "frmToDo";
             this.Text = "To Do List";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

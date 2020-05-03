@@ -12,20 +12,20 @@ namespace To_Do_List
 {
     public partial class WebBrowser : Form
     {
-        public WebBrowser()
+     
+        public WebBrowser(string address)
         {
             InitializeComponent();
+            this.Address = address;
         }
 
+        // set property
+        public string Address { get; set; }
+                
         private void WebBrowser_Load(object sender, EventArgs e)
         {
-            // When the form loads, open this web page.
-            WebBrowser webBrowser = new WebBrowser();
-            DialogResult goButton = webBrowser.ShowDialog();
-            if (goButton == DialogResult.OK)
-                txtAddress.Text = webBrowser.Tag.ToString();
-
-             webBrowser.Navigate("http://www.google.com/");
+            txtAddress.Text = Address;
+            webBrowser1.Navigate("http://www.google.com/");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -63,9 +63,10 @@ namespace To_Do_List
         {
             //display address
             webBrowser1.Navigate(txtAddress.Text);
+
         }
 
-         internal static void Navigate()
+        internal static void Navigate()
             
         {
              throw new NotImplementedException();

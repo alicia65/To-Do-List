@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace To_Do_List
 {
-   
+
     public partial class frmToDo : Form
     {
         public object chkdateCreated;
@@ -21,7 +21,7 @@ namespace To_Do_List
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
             cboToDoCategory.Items.Add("Work");
             cboToDoCategory.Items.Add("School");
             cboToDoCategory.Items.Add("Personal");
@@ -33,18 +33,18 @@ namespace To_Do_List
             string todoText = txtToDoItem.Text;
             bool urgent = chkUrgent.Checked;
             string category = cboToDoCategory.Text;
-            
+
             string comboBox = lblToDo.Text;
-                        
+
             if (!String.IsNullOrWhiteSpace(todoText))
             {
                 //Create new ToDo object using a constructor
-                ToDo toDoItem = new ToDo(todoText, urgent, category, comboBox );
+                ToDo toDoItem = new ToDo(todoText, urgent, category, comboBox);
 
                 if (!ToDoItemInList(toDoItem))
                 {
                     clsToDoCategory.Items.Add(toDoItem);
-                   txtToDoItem.Text =   " "; //Clear text
+                    txtToDoItem.Text = " "; //Clear text
                 }
                 else
                 {
@@ -55,9 +55,9 @@ namespace To_Do_List
 
         private bool ToDoItemInList(ToDo toDoItem)
         {
-            foreach(ToDo listItem in clsToDoCategory.Items) 
+            foreach (ToDo listItem in clsToDoCategory.Items)
             {
-                if(toDoItem.Text.ToUpper() == listItem.Text.ToUpper()) 
+                if (toDoItem.Text.ToUpper() == listItem.Text.ToUpper())
                 {
                     return true;//This list item has the same text as toDoItem
                 }
@@ -73,14 +73,14 @@ namespace To_Do_List
             List<ToDo> doneItems = new List<ToDo>();
 
             //Copy all checked items to new List
-            foreach (ToDo item in clsToDoCategory.CheckedItems) 
+            foreach (ToDo item in clsToDoCategory.CheckedItems)
             {
                 doneItems.Add(item);
             }
 
             // For each string in doneItems list, remove from clsToDo.Items
             // Add to lstDone.Items
-            foreach(ToDo item in doneItems) 
+            foreach (ToDo item in doneItems)
             {
                 clsToDoCategory.Items.Remove(item); // Remove by value
                 lstDone.Items.Add(item);
@@ -94,21 +94,10 @@ namespace To_Do_List
 
         private void btnSearchInternet_Click(object sender, EventArgs e)
         {
-            try
-            {
-                //open the web browser form WebBrowser.cs
-                WebBrowser browser = new WebBrowser();
-                DialogResult searchInternetButton = browser.ShowDialog();
-                if (searchInternetButton == DialogResult.OK)
-                    lblToDo.Text = browser.Tag.ToString();
-            }
-             catch (FormatException)
-            {
-                MessageBox.Show("Enter text only", "Error");
-            }
-
-
-
-        }        
+            //passing data from To Do form to web browser form
+            WebBrowser browser = new WebBrowser(txtToDoItem.Text);
+            browser.ShowDialog();
+        }
     }
-}
+}    
+
