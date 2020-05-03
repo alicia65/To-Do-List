@@ -75,7 +75,7 @@
             this.clsToDoCategory.FormattingEnabled = true;
             this.clsToDoCategory.Location = new System.Drawing.Point(28, 124);
             this.clsToDoCategory.Name = "clsToDoCategory";
-            this.clsToDoCategory.Size = new System.Drawing.Size(731, 174);
+            this.clsToDoCategory.Size = new System.Drawing.Size(745, 174);
             this.clsToDoCategory.TabIndex = 4;
             // 
             // btnDelete
@@ -94,7 +94,7 @@
             this.lstDone.ItemHeight = 16;
             this.lstDone.Location = new System.Drawing.Point(28, 371);
             this.lstDone.Name = "lstDone";
-            this.lstDone.Size = new System.Drawing.Size(731, 68);
+            this.lstDone.Size = new System.Drawing.Size(745, 68);
             this.lstDone.TabIndex = 7;
             // 
             // lblDeletedItems
