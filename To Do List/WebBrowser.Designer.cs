@@ -53,15 +53,15 @@
             this.webBrowser1.Location = new System.Drawing.Point(0, 37);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(795, 409);
-            this.webBrowser1.TabIndex = 7;
+            this.webBrowser1.Size = new System.Drawing.Size(795, 413);
+            this.webBrowser1.TabIndex = 2;
             // 
             // btnBack
             // 
             this.btnBack.Location = new System.Drawing.Point(8, 8);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(84, 23);
-            this.btnBack.TabIndex = 8;
+            this.btnBack.TabIndex = 3;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.button1_Click);
@@ -71,7 +71,7 @@
             this.btnForward.Location = new System.Drawing.Point(114, 8);
             this.btnForward.Name = "btnForward";
             this.btnForward.Size = new System.Drawing.Size(75, 23);
-            this.btnForward.TabIndex = 9;
+            this.btnForward.TabIndex = 4;
             this.btnForward.Text = "Forward";
             this.btnForward.UseVisualStyleBackColor = true;
             this.btnForward.Click += new System.EventHandler(this.btnForward_Click);
@@ -81,7 +81,7 @@
             this.btnRefresh.Location = new System.Drawing.Point(220, 8);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(75, 23);
-            this.btnRefresh.TabIndex = 10;
+            this.btnRefresh.TabIndex = 5;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
@@ -91,7 +91,7 @@
             this.btnHome.Location = new System.Drawing.Point(321, 8);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(75, 23);
-            this.btnHome.TabIndex = 11;
+            this.btnHome.TabIndex = 6;
             this.btnHome.Text = "Home";
             this.btnHome.UseVisualStyleBackColor = true;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
@@ -101,7 +101,7 @@
             this.btnGo.Location = new System.Drawing.Point(683, 7);
             this.btnGo.Name = "btnGo";
             this.btnGo.Size = new System.Drawing.Size(43, 23);
-            this.btnGo.TabIndex = 12;
+            this.btnGo.TabIndex = 1;
             this.btnGo.Text = "GO";
             this.btnGo.UseVisualStyleBackColor = true;
             this.btnGo.Click += new System.EventHandler(this.btnGo_Click);
@@ -111,7 +111,7 @@
             this.txtAddress.Location = new System.Drawing.Point(426, 8);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(237, 22);
-            this.txtAddress.TabIndex = 13;
+            this.txtAddress.TabIndex = 0;
             // 
             // label1
             // 
@@ -133,7 +133,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(828, 479);
+            this.ClientSize = new System.Drawing.Size(864, 531);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtAddress);

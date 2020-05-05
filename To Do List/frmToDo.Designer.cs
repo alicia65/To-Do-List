@@ -56,7 +56,7 @@
             this.label2.Location = new System.Drawing.Point(25, 100);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 23);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 5;
             this.label2.Text = "Things to do";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -76,7 +76,7 @@
             this.clsToDoCategory.Location = new System.Drawing.Point(28, 124);
             this.clsToDoCategory.Name = "clsToDoCategory";
             this.clsToDoCategory.Size = new System.Drawing.Size(745, 174);
-            this.clsToDoCategory.TabIndex = 4;
+            this.clsToDoCategory.TabIndex = 5;
             // 
             // btnDelete
             // 
@@ -111,7 +111,7 @@
             this.chkUrgent.Location = new System.Drawing.Point(468, 57);
             this.chkUrgent.Name = "chkUrgent";
             this.chkUrgent.Size = new System.Drawing.Size(81, 24);
-            this.chkUrgent.TabIndex = 9;
+            this.chkUrgent.TabIndex = 2;
             this.chkUrgent.Text = "Urgent";
             this.chkUrgent.UseVisualStyleBackColor = true;
             this.chkUrgent.CheckedChanged += new System.EventHandler(this.ChkUrgent_CheckedChanged);
@@ -122,14 +122,14 @@
             this.cboToDoCategory.Location = new System.Drawing.Point(242, 57);
             this.cboToDoCategory.Name = "cboToDoCategory";
             this.cboToDoCategory.Size = new System.Drawing.Size(208, 24);
-            this.cboToDoCategory.TabIndex = 10;
+            this.cboToDoCategory.TabIndex = 1;
             // 
             // txtToDoItem
             // 
             this.txtToDoItem.Location = new System.Drawing.Point(28, 57);
             this.txtToDoItem.Name = "txtToDoItem";
             this.txtToDoItem.Size = new System.Drawing.Size(187, 22);
-            this.txtToDoItem.TabIndex = 11;
+            this.txtToDoItem.TabIndex = 0;
             // 
             // lblCategory
             // 
@@ -144,7 +144,7 @@
             this.btnSearchInternet.Location = new System.Drawing.Point(647, 58);
             this.btnSearchInternet.Name = "btnSearchInternet";
             this.btnSearchInternet.Size = new System.Drawing.Size(141, 23);
-            this.btnSearchInternet.TabIndex = 15;
+            this.btnSearchInternet.TabIndex = 4;
             this.btnSearchInternet.Text = "Search Internet";
             this.btnSearchInternet.UseVisualStyleBackColor = true;
             this.btnSearchInternet.Click += new System.EventHandler(this.btnSearchInternet_Click);

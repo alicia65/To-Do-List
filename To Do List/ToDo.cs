@@ -9,14 +9,13 @@ namespace To_Do_List
 {
     class ToDo
     {
-        
         public ToDo(string text, bool urgent, string category, string comboBox) 
         {
             Text = text; // set the Text property
             Urgent = urgent; // set the Urgent property
             Category = category;// set the Category property
             ComboBox = comboBox; // set the Combox property
-            DueDate = DateTime.Now.AddDays(10);//statement for Due date
+            DueDate = DateTime.Now.AddDays(5);//Set Due date by starting with today date and add 5 days
         }
         // A Property, backed by the text field 
         public string Text { get; set; }

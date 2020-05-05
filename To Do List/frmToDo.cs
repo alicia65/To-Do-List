@@ -25,7 +25,7 @@ namespace To_Do_List
             cboToDoCategory.Items.Add("Work");
             cboToDoCategory.Items.Add("School");
             cboToDoCategory.Items.Add("Personal");
-
+            cboToDoCategory.Items.Add("Just for Fun");
         }
 
         private void btnAddToDo_Click(object sender, EventArgs e)
@@ -45,6 +45,7 @@ namespace To_Do_List
                 {
                     clsToDoCategory.Items.Add(toDoItem);
                     txtToDoItem.Text = " "; //Clear text
+                    txtToDoItem.Focus();// focus on this button
                 }
                 else
                 {
@@ -60,6 +61,7 @@ namespace To_Do_List
                 if (toDoItem.Text.ToUpper() == listItem.Text.ToUpper())
                 {
                     return true;//This list item has the same text as toDoItem
+
                 }
             }
             //If the end of the loop is reached without returning
@@ -85,6 +87,14 @@ namespace To_Do_List
                 clsToDoCategory.Items.Remove(item); // Remove by value
                 lstDone.Items.Add(item);
             }
+
+            //Search list done for for done items
+            foreach (ToDo item in doneItems) 
+            {
+                lstDone.Items.Contains(item);//check list done for item
+            }
+            
+
         }
 
         private void ChkUrgent_CheckedChanged(object sender, EventArgs e)

@@ -25,7 +25,7 @@ namespace To_Do_List
         private void WebBrowser_Load(object sender, EventArgs e)
         {
             txtAddress.Text = Address;
-            webBrowser1.Navigate("http://www.google.com/");
+            webBrowser1.Navigate("http://www.google.com/");// display url
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -41,13 +41,12 @@ namespace To_Do_List
         private void btnForward_Click(object sender, EventArgs e)
         {
             //Call forward button to move forward
-            if (webBrowser1.CanGoForward) 
+            if (webBrowser1.CanGoForward)
             {
                 webBrowser1.GoForward();
             }
-
         }
-
+        
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             //Call refresh button to refresh web browser
@@ -63,6 +62,7 @@ namespace To_Do_List
         {
             //display address
             webBrowser1.Navigate(txtAddress.Text);
+            btnGo.Focus(); // made go button as focus button
 
         }
 
