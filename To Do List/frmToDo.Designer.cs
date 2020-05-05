@@ -40,6 +40,7 @@
             this.txtToDoItem = new System.Windows.Forms.TextBox();
             this.lblCategory = new System.Windows.Forms.Label();
             this.btnSearchInternet = new System.Windows.Forms.Button();
+            this.btnSearchDoneItems = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblToDo
@@ -75,12 +76,12 @@
             this.clsToDoCategory.FormattingEnabled = true;
             this.clsToDoCategory.Location = new System.Drawing.Point(28, 124);
             this.clsToDoCategory.Name = "clsToDoCategory";
-            this.clsToDoCategory.Size = new System.Drawing.Size(745, 174);
+            this.clsToDoCategory.Size = new System.Drawing.Size(745, 140);
             this.clsToDoCategory.TabIndex = 5;
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(28, 308);
+            this.btnDelete.Location = new System.Drawing.Point(28, 270);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(156, 23);
             this.btnDelete.TabIndex = 6;
@@ -92,14 +93,14 @@
             // 
             this.lstDone.FormattingEnabled = true;
             this.lstDone.ItemHeight = 16;
-            this.lstDone.Location = new System.Drawing.Point(28, 371);
+            this.lstDone.Location = new System.Drawing.Point(28, 344);
             this.lstDone.Name = "lstDone";
             this.lstDone.Size = new System.Drawing.Size(745, 68);
             this.lstDone.TabIndex = 7;
             // 
             // lblDeletedItems
             // 
-            this.lblDeletedItems.Location = new System.Drawing.Point(25, 345);
+            this.lblDeletedItems.Location = new System.Drawing.Point(25, 318);
             this.lblDeletedItems.Name = "lblDeletedItems";
             this.lblDeletedItems.Size = new System.Drawing.Size(100, 23);
             this.lblDeletedItems.TabIndex = 8;
@@ -149,12 +150,22 @@
             this.btnSearchInternet.UseVisualStyleBackColor = true;
             this.btnSearchInternet.Click += new System.EventHandler(this.btnSearchInternet_Click);
             // 
+            // btnSearchDoneItems
+            // 
+            this.btnSearchDoneItems.Location = new System.Drawing.Point(28, 419);
+            this.btnSearchDoneItems.Name = "btnSearchDoneItems";
+            this.btnSearchDoneItems.Size = new System.Drawing.Size(156, 23);
+            this.btnSearchDoneItems.TabIndex = 13;
+            this.btnSearchDoneItems.Text = "Search done items";
+            this.btnSearchDoneItems.UseVisualStyleBackColor = true;
+            // 
             // frmToDo
             // 
             this.AcceptButton = this.btnAddToDo;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSearchDoneItems);
             this.Controls.Add(this.btnSearchInternet);
             this.Controls.Add(this.lblCategory);
             this.Controls.Add(this.txtToDoItem);
@@ -189,6 +200,7 @@
         private System.Windows.Forms.TextBox txtToDoItem;
         private System.Windows.Forms.Label lblCategory;
         private System.Windows.Forms.Button btnSearchInternet;
+        private System.Windows.Forms.Button btnSearchDoneItems;
     }
 }
 
