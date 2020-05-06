@@ -46,15 +46,15 @@
             this.lblStatus.Location = new System.Drawing.Point(13, 406);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(0, 17);
-            this.lblStatus.TabIndex = 6;
+            this.lblStatus.TabIndex = 7;
             // 
             // webBrowser1
             // 
             this.webBrowser1.Location = new System.Drawing.Point(0, 37);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(795, 413);
-            this.webBrowser1.TabIndex = 2;
+            this.webBrowser1.Size = new System.Drawing.Size(795, 433);
+            this.webBrowser1.TabIndex = 3;
             // 
             // btnBack
             // 
@@ -119,7 +119,7 @@
             this.label1.Location = new System.Drawing.Point(16, 421);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 17);
-            this.label1.TabIndex = 14;
+            this.label1.TabIndex = 8;
             // 
             // label2
             // 
@@ -127,13 +127,13 @@
             this.label2.Location = new System.Drawing.Point(5, 453);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 17);
-            this.label2.TabIndex = 15;
+            this.label2.TabIndex = 9;
             // 
             // WebBrowser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(864, 531);
+            this.ClientSize = new System.Drawing.Size(864, 532);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtAddress);
