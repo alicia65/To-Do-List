@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ This program is to generate to do list application. The app helps users in organizing their tasks by using combobox control to show different categories. 
+ In addition, it has other special features. For example, check box uses to mark off done tasks in list box. 
+ The urgent button sets tasks' priority.  
+ The web browswer control helps users to search internet to learn more about complex to do tasks. 
+ Furthermore, the app also gives users time line on starting and finishing certain tasks. 
+ Likewise, it has ability to remove and search done tasks.
+ */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,7 +29,7 @@ namespace To_Do_List
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            //add text to combo box
             cboToDoCategory.Items.Add("Work");
             cboToDoCategory.Items.Add("School");
             cboToDoCategory.Items.Add("Personal");
