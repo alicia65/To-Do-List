@@ -64,7 +64,7 @@
             this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(116, 29);
-            this.btnBack.TabIndex = 3;
+            this.btnBack.TabIndex = 2;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.button1_Click);
@@ -75,7 +75,7 @@
             this.btnForward.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnForward.Name = "btnForward";
             this.btnForward.Size = new System.Drawing.Size(103, 29);
-            this.btnForward.TabIndex = 4;
+            this.btnForward.TabIndex = 3;
             this.btnForward.Text = "Forward";
             this.btnForward.UseVisualStyleBackColor = true;
             this.btnForward.Click += new System.EventHandler(this.btnForward_Click);
@@ -86,7 +86,7 @@
             this.btnRefresh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(103, 29);
-            this.btnRefresh.TabIndex = 5;
+            this.btnRefresh.TabIndex = 4;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
@@ -97,7 +97,7 @@
             this.btnHome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(103, 29);
-            this.btnHome.TabIndex = 6;
+            this.btnHome.TabIndex = 5;
             this.btnHome.Text = "Home";
             this.btnHome.UseVisualStyleBackColor = true;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
