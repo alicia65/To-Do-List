@@ -43,24 +43,27 @@
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(13, 406);
+            this.lblStatus.Location = new System.Drawing.Point(18, 508);
+            this.lblStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(0, 17);
+            this.lblStatus.Size = new System.Drawing.Size(0, 20);
             this.lblStatus.TabIndex = 7;
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(0, 37);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Location = new System.Drawing.Point(0, 46);
+            this.webBrowser1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(28, 25);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(795, 433);
+            this.webBrowser1.Size = new System.Drawing.Size(1093, 541);
             this.webBrowser1.TabIndex = 3;
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(8, 8);
+            this.btnBack.Location = new System.Drawing.Point(11, 10);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(84, 23);
+            this.btnBack.Size = new System.Drawing.Size(116, 29);
             this.btnBack.TabIndex = 3;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
@@ -68,9 +71,10 @@
             // 
             // btnForward
             // 
-            this.btnForward.Location = new System.Drawing.Point(114, 8);
+            this.btnForward.Location = new System.Drawing.Point(157, 10);
+            this.btnForward.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnForward.Name = "btnForward";
-            this.btnForward.Size = new System.Drawing.Size(75, 23);
+            this.btnForward.Size = new System.Drawing.Size(103, 29);
             this.btnForward.TabIndex = 4;
             this.btnForward.Text = "Forward";
             this.btnForward.UseVisualStyleBackColor = true;
@@ -78,9 +82,10 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(220, 8);
+            this.btnRefresh.Location = new System.Drawing.Point(302, 10);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(75, 23);
+            this.btnRefresh.Size = new System.Drawing.Size(103, 29);
             this.btnRefresh.TabIndex = 5;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
@@ -88,9 +93,10 @@
             // 
             // btnHome
             // 
-            this.btnHome.Location = new System.Drawing.Point(321, 8);
+            this.btnHome.Location = new System.Drawing.Point(441, 10);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(75, 23);
+            this.btnHome.Size = new System.Drawing.Size(103, 29);
             this.btnHome.TabIndex = 6;
             this.btnHome.Text = "Home";
             this.btnHome.UseVisualStyleBackColor = true;
@@ -98,9 +104,10 @@
             // 
             // btnGo
             // 
-            this.btnGo.Location = new System.Drawing.Point(683, 7);
+            this.btnGo.Location = new System.Drawing.Point(939, 9);
+            this.btnGo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGo.Name = "btnGo";
-            this.btnGo.Size = new System.Drawing.Size(43, 23);
+            this.btnGo.Size = new System.Drawing.Size(59, 29);
             this.btnGo.TabIndex = 1;
             this.btnGo.Text = "GO";
             this.btnGo.UseVisualStyleBackColor = true;
@@ -108,32 +115,36 @@
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(426, 8);
+            this.txtAddress.Location = new System.Drawing.Point(586, 10);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(237, 22);
+            this.txtAddress.Size = new System.Drawing.Size(324, 27);
             this.txtAddress.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 421);
+            this.label1.Location = new System.Drawing.Point(22, 526);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 17);
+            this.label1.Size = new System.Drawing.Size(0, 20);
             this.label1.TabIndex = 8;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(5, 453);
+            this.label2.Location = new System.Drawing.Point(7, 566);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 17);
+            this.label2.Size = new System.Drawing.Size(0, 20);
             this.label2.TabIndex = 9;
             // 
             // WebBrowser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(864, 493);
+            this.BackColor = System.Drawing.SystemColors.Info;
+            this.ClientSize = new System.Drawing.Size(1188, 616);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtAddress);
@@ -144,7 +155,9 @@
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.lblStatus);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "WebBrowser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "To Do Web Browser";
