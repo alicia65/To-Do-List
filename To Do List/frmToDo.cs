@@ -118,14 +118,16 @@ namespace To_Do_List
         private void btnSearchDoneItems_Click(object sender, EventArgs e)
         {
             lstDone.SelectedItems.Clear();//clear list box
-            for (int k = lstDone.Items.Count - 1; k > 0; k --)// loop searches each item in done list and count backward 
-                
+            for (int k = lstDone.Items.Count - 1; k > 0; k--)// loop searches each item in done list and count backward 
+
                 if (lstDone.Items[k].ToString().ToUpper().Contains(txtDoneItems.Text.ToUpper())) //Checking status of text box done items by using contain() and ToUpper () methods
                 {
                     lstDone.SetSelected(k, true);// use boolean to confirm matching item
                 }
+            
             lblStatus.Text = lstDone.SelectedItems.Count.ToString() + " search found";// label status displays counted and found items.
-        }
+            lblStatus.BackColor = Color.Green;//display color
+        }   
     }
 }    
 

@@ -68,7 +68,7 @@
             // btnAddToDo
             // 
             this.btnAddToDo.Location = new System.Drawing.Point(763, 80);
-            this.btnAddToDo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddToDo.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddToDo.Name = "btnAddToDo";
             this.btnAddToDo.Size = new System.Drawing.Size(91, 32);
             this.btnAddToDo.TabIndex = 3;
@@ -80,7 +80,7 @@
             // 
             this.clsToDoCategory.FormattingEnabled = true;
             this.clsToDoCategory.Location = new System.Drawing.Point(38, 147);
-            this.clsToDoCategory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.clsToDoCategory.Margin = new System.Windows.Forms.Padding(4);
             this.clsToDoCategory.Name = "clsToDoCategory";
             this.clsToDoCategory.Size = new System.Drawing.Size(1023, 165);
             this.clsToDoCategory.TabIndex = 5;
@@ -88,7 +88,7 @@
             // btnDelete
             // 
             this.btnDelete.Location = new System.Drawing.Point(38, 324);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(214, 32);
             this.btnDelete.TabIndex = 6;
@@ -101,7 +101,7 @@
             this.lstDone.FormattingEnabled = true;
             this.lstDone.ItemHeight = 22;
             this.lstDone.Location = new System.Drawing.Point(38, 407);
-            this.lstDone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstDone.Margin = new System.Windows.Forms.Padding(4);
             this.lstDone.Name = "lstDone";
             this.lstDone.Size = new System.Drawing.Size(1023, 136);
             this.lstDone.TabIndex = 7;
@@ -119,7 +119,7 @@
             // chkUrgent
             // 
             this.chkUrgent.Location = new System.Drawing.Point(644, 78);
-            this.chkUrgent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkUrgent.Margin = new System.Windows.Forms.Padding(4);
             this.chkUrgent.Name = "chkUrgent";
             this.chkUrgent.Size = new System.Drawing.Size(111, 33);
             this.chkUrgent.TabIndex = 2;
@@ -131,7 +131,7 @@
             // 
             this.cboToDoCategory.FormattingEnabled = true;
             this.cboToDoCategory.Location = new System.Drawing.Point(333, 78);
-            this.cboToDoCategory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboToDoCategory.Margin = new System.Windows.Forms.Padding(4);
             this.cboToDoCategory.Name = "cboToDoCategory";
             this.cboToDoCategory.Size = new System.Drawing.Size(284, 30);
             this.cboToDoCategory.TabIndex = 1;
@@ -139,7 +139,7 @@
             // txtToDoItem
             // 
             this.txtToDoItem.Location = new System.Drawing.Point(38, 78);
-            this.txtToDoItem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtToDoItem.Margin = new System.Windows.Forms.Padding(4);
             this.txtToDoItem.Name = "txtToDoItem";
             this.txtToDoItem.Size = new System.Drawing.Size(256, 28);
             this.txtToDoItem.TabIndex = 0;
@@ -156,7 +156,7 @@
             // btnSearchInternet
             // 
             this.btnSearchInternet.Location = new System.Drawing.Point(890, 80);
-            this.btnSearchInternet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSearchInternet.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearchInternet.Name = "btnSearchInternet";
             this.btnSearchInternet.Size = new System.Drawing.Size(194, 32);
             this.btnSearchInternet.TabIndex = 4;
@@ -167,7 +167,7 @@
             // btnSearchDoneItems
             // 
             this.btnSearchDoneItems.Location = new System.Drawing.Point(333, 551);
-            this.btnSearchDoneItems.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSearchDoneItems.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearchDoneItems.Name = "btnSearchDoneItems";
             this.btnSearchDoneItems.Size = new System.Drawing.Size(214, 32);
             this.btnSearchDoneItems.TabIndex = 10;
@@ -187,7 +187,7 @@
             // txtDoneItems
             // 
             this.txtDoneItems.Location = new System.Drawing.Point(38, 553);
-            this.txtDoneItems.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDoneItems.Margin = new System.Windows.Forms.Padding(4);
             this.txtDoneItems.Name = "txtDoneItems";
             this.txtDoneItems.Size = new System.Drawing.Size(256, 28);
             this.txtDoneItems.TabIndex = 9;
@@ -198,7 +198,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1100, 619);
+            this.ClientSize = new System.Drawing.Size(1116, 624);
             this.Controls.Add(this.txtDoneItems);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.btnSearchDoneItems);
@@ -215,7 +215,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblToDo);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmToDo";
             this.Text = "To Do List";
             this.Load += new System.EventHandler(this.Form1_Load);
